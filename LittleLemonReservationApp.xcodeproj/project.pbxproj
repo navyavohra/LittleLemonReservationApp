@@ -14,6 +14,8 @@
 		D50D08B72C693ED700722C33 /* LittleLemonReservationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50D08B62C693ED700722C33 /* LittleLemonReservationAppTests.swift */; };
 		D50D08C12C693ED800722C33 /* LittleLemonReservationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50D08C02C693ED800722C33 /* LittleLemonReservationAppUITests.swift */; };
 		D50D08C32C693ED800722C33 /* LittleLemonReservationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50D08C22C693ED800722C33 /* LittleLemonReservationAppUITestsLaunchTests.swift */; };
+		D5FC2B8B2C6A989700F54B18 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC2B8A2C6A989700F54B18 /* LocationView.swift */; };
+		D5FC2B8D2C6A98DD00F54B18 /* ReservationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC2B8C2C6A98DD00F54B18 /* ReservationFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		D50D08BC2C693ED800722C33 /* LittleLemonReservationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonReservationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50D08C02C693ED800722C33 /* LittleLemonReservationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonReservationAppUITests.swift; sourceTree = "<group>"; };
 		D50D08C22C693ED800722C33 /* LittleLemonReservationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonReservationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5FC2B8A2C6A989700F54B18 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		D5FC2B8C2C6A98DD00F54B18 /* ReservationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				D50D08A72C693ED300722C33 /* ContentView.swift */,
 				D50D08A92C693ED700722C33 /* Assets.xcassets */,
 				D50D08AB2C693ED700722C33 /* Preview Content */,
+				D5FC2B8A2C6A989700F54B18 /* LocationView.swift */,
+				D5FC2B8C2C6A98DD00F54B18 /* ReservationFormView.swift */,
 			);
 			path = LittleLemonReservationApp;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D50D08A82C693ED300722C33 /* ContentView.swift in Sources */,
+				D5FC2B8D2C6A98DD00F54B18 /* ReservationFormView.swift in Sources */,
+				D5FC2B8B2C6A989700F54B18 /* LocationView.swift in Sources */,
 				D50D08A62C693ED300722C33 /* LittleLemonReservationAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
