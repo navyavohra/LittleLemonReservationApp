@@ -26,6 +26,11 @@ struct LocationsView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Image("LittleLemonLogo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 300, height: 150)
+                            .padding()
                 
                 Text("Select a location")
                     .font(.headline)
