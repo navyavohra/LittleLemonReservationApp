@@ -43,7 +43,50 @@ struct ReservationFormView: View {
                 TextField("E-Mail", text: $email)
                 TextField("Special Request", text: $specialRequest)
             }
+            
+            Button(action: validateForm) {
+                Text("Confirm Reservation")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+            }
         }
+        .navigationTitle(location.name)
+    }
+    
+    func validateForm() {
+        alertMessage = ""
+        
+        if name.count < 3 {
+            alertMessage += "Names can only contain letters and must have at least 3 characters.\n"
+        }
+        
+        if phone.isEmpty {
+            alertMessage += "The phone number cannot be blank.\n"
+        }
+        
+        if !isValidEmail(email) {
+            alertMessage += "The e-mail is invalid and cannot be blank.\n"
+        }
+        
+        if !alertMessage.isEmpty {
+            showAlert = true
+        } else {
+            // Process the reservation (this part can be customized as needed)
+            showAlert = true
+            alertMessage = "Reservation confirmed!"
+        }
+    }
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
     }
 }
 
