@@ -26,7 +26,6 @@ struct LocationsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                LogoView()
                 
                 Text("Select a location")
                     .font(.headline)
