@@ -52,6 +52,7 @@ struct ReservationFormView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            //Alert Handling
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
             }
